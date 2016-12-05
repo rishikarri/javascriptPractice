@@ -1,0 +1,19 @@
+<script>
+var billAmount = Number(prompt("How much did that meal cost?")); 
+var serviceQuality = prompt("How was your service?", "good, fair, bad").toLowerCase();
+
+var good = .2;
+var fair = .15;
+var bad = .1; 
+
+
+if (serviceQuality == "good"){
+	console.log(billAmount + good * billAmount);
+}else if(serviceQuality == "fair"){
+	console.log(billAmount + fair * billAmount);
+}else{
+	console.log(billAmount + bad * billAmount);
+}
+
+
+</script>
