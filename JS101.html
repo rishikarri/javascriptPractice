@@ -1,0 +1,177 @@
+<script type="text/javascript">
+
+	// Printing Stuff
+	// window.alert("Hello, world.");
+
+	// it is assumed that you are using window in front of everything
+
+	// alert("Hello, world.");
+
+
+
+	// function test() {
+	// 	return 2+2;
+	// }
+
+	// console.dir("Hello World");
+
+	// // prints this to a directory
+
+	// document.write("Hello, World!");
+
+	// console.log(test());
+
+	// // a dot followed by a word and () is a function
+	// // a dot not folled by () is a property
+	// // method is synonymous with action
+
+	// var fullName = "Robert Bunch"; //Declaring
+	// fullName = "Max McChesny"; //Assigning
+	// fullName = 'Robert "The Man" Bunch'; 
+
+	// // \ - whatever comes next is still part of the string
+
+	// fullName = "Robert \"The Man\" Bunch"
+	// console.log(fullName);
+
+	// fullName = 'Joe O\' Malley';
+
+	// console.log(fullName);
+
+	// //Number
+
+	// var myAge = 23; //purple means it isa number - integer - has no decimals
+	// var myAge = 23.8; //float - it has decimals
+
+	// var myAgeAsAString = "24"; 
+
+	// // Operators
+
+	// // 	
+
+	// document.write(myAgeAsAString + 1);
+
+	// // If there is a tring anywhere, everything will become a string... String rules all!
+
+	// var doubleMyAge = myAge*2; 
+
+	// document.write("\n" + doubleMyAge);
+
+	// var floatNumber = 3.14;
+
+	// console.log(typeof(floatNumber));
+
+	// var makeMeAnInteger = parseInt(floatNumber); 
+	// // parse int hacks off the decimal and returns it
+	// console.log(makeMeAnInteger);
+	// console.log(.2+.1);
+
+
+	// var theTruth = true; 
+	// // true is the same thing as 1 in javascript
+
+	// var addOneToMe = 1;
+	// addOneToMe++;
+
+	// // C 
+	// // C++; 
+	// // if you want your operation to happen ASAP, put the ++ at the beginning
+	// var twenty = 20;
+	// console.log(twenty++);
+	// console.log(++twenty);
+
+	// aClassicLine = "The meaning of life is " + (40+2);
+	// console.log(aClassicLine);
+
+	// // * and / Always come first, then left to right 
+	// // + - always come second then left to right
+
+	// // var getUserName = prompt("What is your name?", "Jim");
+	// // console.log(getUserName);
+	// // document.write(getUserName);
+
+	// // prompts are limited in scope to the page you are on. The second the user leaves the page, the information is lost
+
+	// // We will use HTML forms and / or AJAX for user data
+
+	// // Conditionals 
+
+	// // var classSize = 16;
+	// // var question = "How big is your coding class?";
+	// // var response = prompt(question, classSize);
+
+	// // if(response == 16) {
+	// // 	console.log("You are in the November class."); 
+	// // }
+
+	// // // !=  - is the way to compare if left and right are not equal
+	// // // === same as == but it checks to make sure the data types are equal as well
+
+	// // // prompt always converts user input into a string
+
+	// // if (response!==16){
+	// // 	console.log("You are NOT in the november class");
+	// // }
+	//  // Number(response) --> makes response a number
+
+	//  var whatAmI = Number("DigitalCrafts");
+	//  console.log(whatAmI);
+
+	//  if(typeof(whatAmI) === 'number'){
+	//  	console.log("You're a number");
+	//  }
+
+	//  // isNaN - checks to see if something is actually a numebr or not. Not a number's type is a number even though it's not a number
+
+
+	// var response = prompt("How many in your class?");
+	// if (response == 16){
+	// 	console.log("You are in the November class.");
+	// }else if(response == 15){
+	// 	console.log("You were in the July class");
+	// }
+	// else{
+	// 	console.log("Travis Soctt");
+	// }
+
+
+	// var randomNumber = Math.random(); 
+	// var between = Math.floor(randomNumber * 10) + 1; 
+	// console.log(between);
+
+// MINI EXERCISE 
+
+	//ask the user for input and save it in userResponse 
+	
+
+	var userResponse = prompt("Enter a number between 1 and 10");
+
+	var randomNumber = Math.floor(Math.random() * 10) + 1; 
+	console.log(userResponse);
+	console.log(randomNumber);
+
+	if((isNaN(userResponse) == true)){
+		console.log("Sorry I didn't catch that - please enter a number.")
+	}
+	else{
+		if(userResponse == randomNumber){
+			console.log("YOU ARE A PSYCHIC! You guessed the number I was thinking of :o");
+		}else if(((userResponse >= (randomNumber-2)) && (userResponse <= (randomNumber+2)))){
+			console.log("You are close but no cigar! THe number I was thinking of is " + randomNumber);
+		}else{ 
+			console.log("You aren't even close!!!! The number is " + randomNumber);
+		}
+	}
+
+
+
+	
+
+	// else if(((Math.abs(userResponse - randomNumber)) > 2)){
+
+
+
+
+
+	//generates a random 16 digit number between 0 and 1 - works off teh clock 
+</script>

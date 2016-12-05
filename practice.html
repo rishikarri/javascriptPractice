@@ -1,0 +1,56 @@
+<script>
+
+//Arrays
+// var student1 = "Sean";
+// var student2 = "Drew";
+// var student3 = "Daniel";
+// var student4 = "Kyle";
+
+// Array is a single variable with a numbered list of parts
+// Arrays go inside of square brackets
+
+
+
+// var nfcSouth1 = "Falcons";
+// var nfcSouth2 = "Saints"; 
+// var nfcSouth3 = "Panthers"; 
+// var nfcSouth4 = "Bucs" ;
+
+
+// console.log(students);
+// students.pop();
+// console.log(students);
+
+// students.push("Ryan");
+
+// console.log(students);
+
+
+
+//unshift adds something to the begginning of an array 
+
+students = ["Sean", "Drew", "Daniel", "Kyle"];
+// Ask user for his/her name
+var userName = prompt("What is your name, doooooood?")
+
+// start a counter and loop through, if they user is not in teh class, add one to the counter
+var counter = 0;
+for (i=0; i<students.length; i++){
+	if (userName === students[i]){
+		alert("You are in the class!");
+		break;
+	}
+	counter++;
+}
+
+// if the counter is equal to the students.lengtht htat means that the above loop went through all of the options
+if(counter === students.length){
+	students.push(userName);
+}
+console.log(students);
+
+var seatNumber = Number((prompt("What seat number do you request?")));
+
+console.log("Hmmmm, I believe " + students[seatNumber -1] + " sits there");
+
+</script>
