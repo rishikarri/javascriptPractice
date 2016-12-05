@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fight the Dragon</title>
+		<script src="dragon.js"></script>
+		<link rel="stylesheet" type="text/css" href="dragon.css">
+	</head>
+	<body>
+		<div id="game">
+			<img class="icon" src="images/dragon.png">
+			<div>You encountered a dragon. Do you fight?</div>
+
+			<!-- Option yes and no -->
+			<button>Yes</button> 
+			<button>No</button>
+
+			<img class="icon" name="hero" src="Images/hero.jpg">
+
+			<img name="die1" src="Images/d1.gif">
+			<img name="die2" src="Images/d1.gif">
+
+			<input type="button" onclick="rollDice();" value="Roll the dice!">	
+
+			<div id="userRoll"></div>
+		</div>
+	</body>
+</html>

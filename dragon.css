@@ -1,0 +1,11 @@
+.icon{
+	height: 250px;
+	width: 250px;
+	display: block;
+	margin: auto;
+}
+
+div{
+	text-align: center;
+	margin-top: 50px;
+}
