@@ -13,7 +13,8 @@ function rollDice(){
 	document.getElementById("userRoll").innerHTML = "You rolled a " + totalRoll + "!";
 
 	// calls function which tells user if they killed or were killed by the dragon
-	// processFight((Number(randomDie1 + randomDie2)))
+	
+	processFight(totalRoll);
 }
 
 function displayFightingOptions(){
@@ -21,6 +22,6 @@ function displayFightingOptions(){
 	document.getElementById("fight-option").className = "visible";
 }
 
-functionprocessFight(rollScore){
-	console.log(rollScore);
+function processFight(totalRoll){
+	console.log(totalRoll);
 }
