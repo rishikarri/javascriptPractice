@@ -6,22 +6,45 @@
 		<link rel="stylesheet" type="text/css" href="dragon.css">
 	</head>
 	<body>
+		
+		<!-- Wrapper for contents of the game -->
 		<div id="game">
-			<img class="icon" src="images/dragon.png">
-			<div>You encountered a dragon. Do you fight?</div>
 
-			<!-- Option yes and no -->
-			<button>Yes</button> 
-			<button>No</button>
+		<!-- Dragon and hero image -->
+			<div id="greeting">
 
-			<img class="icon" name="hero" src="Images/hero.jpg">
+				<img id="dragon" src="images/dragon.png">
+				
+				<img class="icon" id="hero" src="Images/hero.jpg">
 
-			<img name="die1" src="Images/d1.gif">
-			<img name="die2" src="Images/d1.gif">
+				<div>
+					<h2>You have encountered a dragon. Will you fight, flee or chug a beer as fast as you possibly can?
+					</h2>
+				</div>
+			</div>
 
-			<input type="button" onclick="rollDice();" value="Roll the dice!">	
+			
+			<!-- Option fight flee and chug a beer -->
+			<div id="options">
+				<button id="fight" onclick="displayFightingOptions();">Fight</button> 
+				<button id="flee">Flee</button>
+				<button id="chug-a-beer">Chug a beer ;)</button>
+			</div>
 
-			<div id="userRoll"></div>
+
+			<!-- User selects to fight -->
+			<div class="invisible" id="fight-option">
+				<h2 id="fighting-instructions">test</h2>
+				<img name="die1" src="Images/d1.gif">
+				<img name="die2" src="Images/d1.gif">
+
+				<input type="button" onclick="rollDice();" value="Roll the dice!">	
+
+				<div id="userRoll"></div>
+			</div>
+
+
+
 		</div>
 	</body>
 </html>

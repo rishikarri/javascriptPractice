@@ -1,11 +1,66 @@
-.icon{
-	height: 250px;
-	width: 250px;
-	display: block;
-	margin: auto;
+/* Styling for greetings */
+
+h2{
+	color: green;	
 }
 
-div{
+#dragon{
+	height: 200px;
+	width: 200px;
+	margin-right: 100px;
+}
+
+#hero{
+	height: 150px;
+	width: 150px;
+}
+
+
+
+#game{
 	text-align: center;
-	margin-top: 50px;
+	
+}
+
+/* Stying for options  */
+
+#fight{
+	background-color: green;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
+	
+}
+
+#flee{
+	background-color: red;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#chug-a-beer{
+	background-color: gold;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
+
+}
+
+
+/* Fight option styling display starts off as invisible*/
+
+#fight-option{
+	
+}
+
+.invisible{
+	visibility: hidden;
+}
+
+.visible{
+	visibility: visible;
 }
