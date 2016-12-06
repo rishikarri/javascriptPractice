@@ -15,7 +15,7 @@
 
 				<img id="dragon" src="images/dragon.png">
 				
-				<img class="icon" id="hero" src="Images/hero.jpg">
+				<img id="hero" src="Images/hero.jpg">
 
 				<div>
 					<h2>You have encountered a dragon. Will you fight, flee or chug a beer as fast as you possibly can?
@@ -27,8 +27,8 @@
 			<!-- Option fight flee and chug a beer -->
 			<div id="options">
 				<button id="fight" onclick="displayFightingOptions();">Fight</button> 
-				<button id="flee">Flee</button>
-				<button id="chug-a-beer">Chug a beer ;)</button>
+				<button id="flee" onclick="flee();">Flee</button>
+				<button id="chug-a-beer" onclick="chug();">Chug a beer ;)</button>
 			</div>
 
 
@@ -41,7 +41,18 @@
 				<input type="button" onclick="rollDice();" value="Roll the dice!">	
 
 				<div id="userRoll"></div>
+				<div id="fightResultLoss"></div>
+				<div id="fightResultWin"></div>
 			</div>
+
+			<!-- User selects to Flee -->
+			
+			<div id="fleeText"></div>
+
+			<!-- User decides to chug a beer -->
+
+			<div id="chugABeer">
+			
 
 
 

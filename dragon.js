@@ -24,4 +24,28 @@ function displayFightingOptions(){
 
 function processFight(totalRoll){
 	console.log(totalRoll);
+	if (totalRoll<9){
+		document.getElementById("hero").src="burnt-toast.jpeg";
+		document.getElementById("fightResultLoss").innerHTML = "Wow that dragon burned you real real bad..."
+	}else{
+		document.getElementById("dragon").src="beer-enjoy2.jpeg";
+		document.getElementById("fightResultWin").innerHTML = "You have killed the dragon! Now you can finally enjoy your beer! My treat :)"
+	}
+}
+
+// Calls functions to flee
+
+function flee(){
+	document.getElementById("hero").src = "running-knight2.jpg"; 
+	document.getElementById("fleeText").innerHTML = "SMART! Fighting dragons takes a lot of energy anyway...don't run too fast though! You may spill your beer!";
+	// document.getElementById("fleeOrChugText").className = "visible";
+}
+
+
+//calls function to chug a beer
+
+function chug(){
+	document.getElementById("hero").src="burnt-toast.jpeg";
+	document.getElementById("chugABeer").innerHTML = "The dragon burnt you to a crisp, but you finished your beer before dying. I will pass on your legacy :)";
+
 }
